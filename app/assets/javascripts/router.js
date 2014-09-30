@@ -6,5 +6,8 @@ App.Router.reopen({
 })
 
 App.Router.map(function() {
-  // this.resource('posts');
+  this.resource('rounds', { path: '/rounds' }, function() {
+    this.route('show', { path: '/:id' });
+  });
+
 });
