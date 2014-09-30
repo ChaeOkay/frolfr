@@ -3,8 +3,8 @@ step "there is a course" do
 end
 
 step "I've played the course" do
-  round = FactoryGirl.create(:round, course: @course)
-  FactoryGirl.create(:scorecard, round: round, user: @user)
+  @round = FactoryGirl.create(:round, course: @course)
+  FactoryGirl.create(:scorecard, round: @round, user: @user)
 end
 
 step "I navigate to courses" do
