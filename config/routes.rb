@@ -3,6 +3,7 @@ Frolfr::Application.routes.draw do
 
   namespace :api do
     resources :courses
+    resources :rounds
   end
 
   get '*path', to: 'dashboard#show'
