@@ -13,6 +13,14 @@
     </tr>
   </thead>
   <tbody>
+    {{#each row in scorecardsTable}}
+    <tr>
+      {{#each score in row}}
+        <td>{{score}}</td>
+      {{/each}}
+    </tr>
+    {{/each}}
   </tbody>
+
 </table>
 
