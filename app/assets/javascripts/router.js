@@ -7,4 +7,5 @@ App.Router.reopen({
 
 App.Router.map(function() {
   this.resource('courses');
+  this.route('sign_up');
 });
